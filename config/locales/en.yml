@@ -21,3 +21,11 @@
 
 en:
   hello: "Hello world"
+  first: "Firstname"
+  last: "Lastname"
+  email: "Email"
+  city: "City"
+  country: "Country"
+  phone_number: "Phone number"
+  website_url: "http://..."
+  comment: "Comment"

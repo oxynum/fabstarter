@@ -39,3 +39,5 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'activeadmin', github: 'activeadmin'
+gem 'haml-rails'
+gem 'country_select', github: 'stefanpenner/country_select'

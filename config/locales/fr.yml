@@ -1,0 +1,10 @@
+fr:
+  hello: "Hello world"
+  first: "Prénom"
+  last: "Nom"
+  email: "Email"
+  city: "Ville"
+  country: "Pays"
+  phone_number: "Téléphone"
+  website_url: "http://..."
+  comment: "Commentaires"
