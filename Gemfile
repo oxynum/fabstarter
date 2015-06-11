@@ -38,6 +38,8 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'devise'
 gem 'activeadmin', github: 'activeadmin'
 gem 'haml-rails'
 gem 'country_select', github: 'stefanpenner/country_select'
+gem 'thin'
