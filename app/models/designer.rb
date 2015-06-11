@@ -1,3 +1,4 @@
+require 'file_size_validator'
 class Designer < ActiveRecord::Base
   mount_uploader :file_1, FileUploader
   mount_uploader :file_2, FileUploader
