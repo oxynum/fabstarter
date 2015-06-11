@@ -17,6 +17,16 @@ GIT
       sass-rails
 
 GIT
+  remote: git://github.com/carrierwaveuploader/carrierwave.git
+  revision: de2a9550dadf5d71563e933d583ba8c3ad6bb101
+  specs:
+    carrierwave (0.10.0)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      json (>= 1.7)
+      mime-types (>= 1.16)
+
+GIT
   remote: git://github.com/stefanpenner/country_select.git
   revision: fad7c1d4aa24af9c84b1718176392d56f201a1f3
   specs:
@@ -210,6 +220,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin!
+  carrierwave!
   coffee-rails (~> 4.0.0)
   country_select!
   devise
