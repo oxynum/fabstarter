@@ -1,13 +1,29 @@
-= form_for @designer do |f|
-  = f.text_field :firstname, required: true, placeholder: t(:first)
-  = f.text_field :lastname, required: true, placeholder: t(:last)
-  = f.email_field :email, required: true, placeholder: t(:email)
-  = f.text_field :city, required: true, placeholder: t(:city)
-  = f.text_field :phone_number, required: true, placeholder: t(:phone_number)
-  = country_select("designer", "country", priority_countries: ["GB", "FR", "DE"], required: true, placeholder: t(:country))
-  = f.text_area :comment, placeholder: t(:comment)
-  = f.file_field :file_1
-  = f.file_field :file_2
-  = f.file_field :file_3
-  = f.text_field :website_url, placeholder: t(:website_url)
-  = f.submit
+.wrapper
+  .logo.solo
+    = image_tag("logo-form.png", class: 'logo-img', width:'100')
+  .form-container
+    = form_for @designer do |f|
+      .input
+        = f.text_field :firstname, required: true, placeholder: t(:first)
+        = f.text_field :lastname, required: true, placeholder: t(:last)
+      .input
+        = f.email_field :email, required: true, placeholder: t(:email)
+        = f.text_field :city, required: true, placeholder: t(:city)
+      .input
+        = f.text_field :phone_number, required: true, placeholder: t(:phone_number)
+        = country_select("designer", "country", priority_countries: ["GB", "FR", "DE"], required: true, placeholder: t(:country))
+      .textarea
+        = f.text_area :comment, placeholder: t(:comment)
+      .upload
+        .custom-file-input
+          = f.file_field :file_1
+        .custom-file-input
+          = f.file_field :file_2
+        .custom-file-input
+          = f.file_field :file_3
+      .website
+        = f.text_field :website_url, placeholder: t(:website_url)
+      .submit
+        = f.submit
+    .clear
+  %span.copyright

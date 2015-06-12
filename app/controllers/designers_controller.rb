@@ -23,6 +23,6 @@ class DesignersController < ApplicationController
 
   private
   def create_params
-    params.require(:designer).permit(:firstname, :lastname, :email, :city, :country, :website_url, :comment, :file_1, :file_2, :file_3)
+    params.require(:designer).permit(:firstname, :lastname, :email, :city, :country, :website_url, :comment, :file_1, :file_2, :file_3, :phone_number)
   end
 end
