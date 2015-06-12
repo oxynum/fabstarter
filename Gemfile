@@ -41,3 +41,8 @@ gem 'haml-rails'
 gem 'country_select', github: 'stefanpenner/country_select'
 gem 'carrierwave', github:'carrierwaveuploader/carrierwave'
 gem 'thin'
+gem 'capistrano'
+gem 'capistrano-bundler'
+gem 'capistrano-rails'
+gem 'capistrano-rbenv', github: "capistrano/rbenv"
+gem 'capistrano-passenger'
