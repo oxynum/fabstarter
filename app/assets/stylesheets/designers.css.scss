@@ -175,3 +175,12 @@ form.new_designer {
     font-size: 1.4em;
   }
 }
+
+@media (max-width: 600px) {
+  form.new_designer {
+    width: 100%;
+  }
+  .form-container textarea#designer_comment{
+    width: 200px;
+  }
+}
