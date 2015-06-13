@@ -14,6 +14,8 @@
         = country_select("designer", "country", priority_countries: ["GB", "FR", "DE"], required: true, placeholder: t(:country))
       .textarea
         = f.text_area :comment, placeholder: t(:comment)
+      %p.pic-describe
+        Show us your talent and upload some examples or send us a link !
       .upload
         .custom-file-input
           = f.file_field :file_1
