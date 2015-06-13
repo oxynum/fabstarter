@@ -21,6 +21,7 @@ ActiveAdmin.register Designer do
     column :file_3 do |designer|
       link_to "File", designer.file_3.url
     end
+    actions
   end
 
 end
