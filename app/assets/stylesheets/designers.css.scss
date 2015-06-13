@@ -230,6 +230,11 @@ form.new_designer {
 .form-container textarea#designer_comment{
   width: 795px;
 }
+@media (max-width: 1200px) {
+  .wrapper {
+    width: 1024px;
+  }
+}
 
 @media (max-width: 600px) {
 
