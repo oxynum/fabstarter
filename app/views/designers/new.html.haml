@@ -1,6 +1,7 @@
-.wrapper
+.wrapper.no-bg
   .logo.solo
-    = image_tag("logo-form.png", class: 'logo-img', width:'100')
+    %a{ :href => "/", :title => "Meet the Team" }
+      = image_tag("logo-form.png", class: 'logo-img', width:'100')
   .form-container
     = form_for @designer do |f|
       .input
@@ -12,7 +13,7 @@
       .input
         = f.text_field :phone_number, required: true, placeholder: t(:phone_number)
         = country_select("designer", "country", priority_countries: ["GB", "FR", "DE"], required: true, placeholder: t(:country))
-      .textarea
+      .textarea{maxlength: '500'}
         = f.text_area :comment, placeholder: t(:comment)
       %p.pic-describe
         Show us your talent and upload some examples or send us a link !

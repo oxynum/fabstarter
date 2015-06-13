@@ -1,6 +1,7 @@
 .wrapper
   .logo
-    = image_tag("logo.jpg", class: 'logo', width:'250')
+    %a{ :href => "/", :title => "Meet the Team" }
+      = image_tag("logo.jpg", class: 'logo', width:'250')
   .description
     %h1 Jewelry designer ?
     %p
