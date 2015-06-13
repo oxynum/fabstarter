@@ -12,7 +12,7 @@ set :migration_role, :app
 set :linked_files, fetch(:linked_files, []).push('config/database.yml', '.rbenv-vars')
 
 # Default value for linked_dirs is []
-set :linked_dirs, fetch(:linked_dirs, []).push('bin', 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
+set :linked_dirs, fetch(:linked_dirs, []).push('bin', 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
 
 namespace :deploy do
   desc 'Restart application'
