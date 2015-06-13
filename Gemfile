@@ -45,3 +45,4 @@ gem 'capistrano-rails'
 gem 'capistrano-rbenv', github: "capistrano/rbenv"
 gem 'capistrano-passenger'
 gem 'pg'
+gem 'sqlite3'
