@@ -111,6 +111,7 @@ a.link-form, .submit input {
       margin-right: 10px;
       border: 0 none;
       background: $color-grey-0;
+      border: 1px solid #ccc;
       padding: 15px 10px;
       margin-bottom: 5px;
       font-family: 'amsi_pro_narwthin';
@@ -131,6 +132,7 @@ a.link-form, .submit input {
       font-family: 'amsi_pro_narwthin';
       background: image_url("selected.jpg") no-repeat right center;
       height: 45px;
+      border: 1px solid #ccc;
     }
   }
   .website {
@@ -145,6 +147,7 @@ a.link-form, .submit input {
       background: $color-grey-0;
       padding: 15px 10px;
       margin-bottom: 5px;
+      border: 1px solid #ccc;
       height: 120px;
       font-size: 1.2em;
       font-family: 'amsi_pro_narwthin';
@@ -171,6 +174,7 @@ a.link-form, .submit input {
   margin-right: 10px;
   margin-bottom: 10px;
   position: relative;
+  border: 1px solid #ccc;
 
   input {
     width: 100%;
@@ -182,6 +186,7 @@ a.link-form, .submit input {
     right: 0;
     bottom: 0;
     cursor: pointer;
+    border: 1px solid #ccc;
   }
 }
 .submit input {
