@@ -43,8 +43,8 @@ body, html{
     display: block;
   }
   &.solo {
-    width: 100px;
-    margin: 20px auto;
+    width: 75px;
+    margin: 40px auto;
     .logo-img {
       width: 100%;
       display: block;
@@ -175,6 +175,10 @@ a.link-form, .submit input {
   margin-bottom: 10px;
   position: relative;
   border: 1px solid #ccc;
+
+  img {
+    width: 100%;
+  }
 
   input {
     width: 100%;
