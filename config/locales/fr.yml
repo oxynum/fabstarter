@@ -2,7 +2,7 @@ fr:
   hello: "Hello world"
   first: "Prénom"
   last: "Nom"
-  email: "Email"
+  email: "@"
   city: "Ville"
   country: "Pays"
   phone_number: "Téléphone"

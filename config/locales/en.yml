@@ -21,9 +21,9 @@
 
 en:
   hello: "Hello world"
-  first: "Firstname"
-  last: "Lastname"
-  email: "Email"
+  first: "First"
+  last: "Last"
+  email: "@"
   city: "City"
   country: "Country"
   phone_number: "Phone number"
