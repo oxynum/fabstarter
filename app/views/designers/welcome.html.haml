@@ -1,6 +1,7 @@
 .wrapper
   .logo
-    = image_tag("logo.jpg", class: 'logo', width:'250')
+    %a{ :href => "/", :title => "Meet the Team" }
+      = image_tag("logo.jpg", class: 'logo', width:'250')
   .description
     %h1 Jewelry designer ?
     %p
@@ -8,7 +9,7 @@
       %br
       We are inviting 40-50 Designers to join us !
       %br
-      You dream jewelry - We do everything else
+      You dream the Jewelry – We do everything else.
     %h2 Interested ?
   %a{:href => "/designers/new", :class => "link-form"} Let's talk
   %span.copyright

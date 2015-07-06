@@ -3,6 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+@import "stylesheet";
+
+//font-family: 'amsi_pro_narwbold';
+//font-family: 'amsi_pro_narwthin';
 
 $color-brown-0: #d2bab5;
 $color-dark-0: #575756;
@@ -21,13 +25,15 @@ body, html{
   bottom: 0;
 }
 .wrapper {
-  max-width: 800px;
+  width: 1200px;
   margin: auto;
   background: image_url("bg.jpg") no-repeat left center;
   background-size: contain;
   position: relative;
   height: 100%;
-  width: 100%;
+  &.no-bg{
+    background: #fff;
+  }
 }
 .logo {
   width: 200px;
@@ -37,8 +43,8 @@ body, html{
     display: block;
   }
   &.solo {
-    width: 100px;
-    margin: 20px auto;
+    width: 75px;
+    margin: 40px auto;
     .logo-img {
       width: 100%;
       display: block;
@@ -47,20 +53,29 @@ body, html{
 }
 
 .description {
-  width: 50%;
+  width: 440px;
   float: right;
   margin-right: 50px;
   background: $color-brown-0;
   color: black;
+  font-family: 'amsi_pro_narwthin';
+  line-height: 30px;
   padding: 20px;
   border-radius: 2px;
   text-align: justify;
   color: $color-dark-0;
+  letter-spacing: 2px;
+  font-size: 1.3em;
+
   h1, h2 {
     text-transform: uppercase;
     font-size: 1.4em;
+    font-family: 'amsi_pro_narwultra';
+    letter-spacing: 3px;
+    text-transform: uppercase;
   }
 }
+
 a.link-form, .submit input {
   display: block;
   float: right;
@@ -76,6 +91,9 @@ a.link-form, .submit input {
   appearance: none;
   border: 0 none;
   cursor: pointer;
+  font-family: 'amsi_pro_narwbold';
+  text-transform: uppercase;
+
   &:hover {
     background: black;
   }
@@ -84,38 +102,55 @@ a.link-form, .submit input {
 .form-container {
   padding: 20px;
   background: rgba(255,255,255,.95);
-  width: 500px;
+  width: 100%;
   margin: auto;
   .input, .website {
     margin-bottom: 10px;
     input {
-      width: 200px;
+      width: 380px;
+      margin-right: 10px;
       border: 0 none;
       background: $color-grey-0;
+      border: 1px solid #ccc;
       padding: 15px 10px;
       margin-bottom: 5px;
+      font-family: 'amsi_pro_narwthin';
+      font-size: 1.2em;
       &:focus {
         background: rgba(239, 239, 239, 0.5);
       }
     }
     select {
-      width: 220px;
+      width: 380px;
       border: 0 none;
       background: $color-grey-0;
-      padding: 15px 10px;
+      padding: 0 10px;
       margin-bottom: 5px;
       appearance: none;
+      font-size: 1.2em;
       border-radius: 0;
+      font-family: 'amsi_pro_narwthin';
+      background: image_url("selected.jpg") no-repeat right center;
+      height: 45px;
+      border: 1px solid #ccc;
     }
-
   }
+  .website {
+    input {
+      float: right;
+    }
+  }
+
   textarea#designer_comment {
-      width: 425px;
+      width: 795px;
       border: 0 none;
       background: $color-grey-0;
       padding: 15px 10px;
       margin-bottom: 5px;
+      border: 1px solid #ccc;
       height: 120px;
+      font-size: 1.2em;
+      font-family: 'amsi_pro_narwthin';
   }
 
 }
@@ -139,59 +174,105 @@ a.link-form, .submit input {
   margin-right: 10px;
   margin-bottom: 10px;
   position: relative;
+  border: 1px solid #ccc;
+
+  img {
+    width: 100%;
+  }
 
   input {
     width: 100%;
     position: absolute;
     height: 100%;
-    opacity: .5;
+    opacity: 0;
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
     cursor: pointer;
+    border: 1px solid #ccc;
   }
 }
 .submit input {
   clear: both;
-  float: left;
+  float: right;
+  font-family: 'amsi_pro_narwbold';
+  margin-right: 10px;
+  text-transform: uppercase;
+  font-size: 1.1em;
 }
 .clear {
   clear: both;
 }
 
 form.new_designer {
-  width: 460px;
+  width: 840px;
   margin: auto;
 }
 
 .message {
-  width: 300px;
-  margin:50px auto;
+  width: 400px;
+  margin:150px auto;
+  float: right;
   background: $color-brown-0;
   color: black;
   padding: 20px;
   border-radius: 2px;
   text-align: justify;
   color: $color-dark-0;
+  font-family: 'amsi_pro_narwthin';
+  letter-spacing: 1px;
+  font-size: 1.1em;
+
   h1, h2 {
     text-transform: uppercase;
     font-size: 1.4em;
+    letter-spacing: 3px;
+    font-family: 'amsi_pro_narwultra';
+    font-weight: bold;
   }
 }
 .pic-describe {
   color: $color-dark-0;
   font-size: .9em;
 }
+.form-container textarea#designer_comment{
+  width: 795px;
+}
+@media (max-width: 1200px) {
+  .wrapper {
+    width: 1024px;
+  }
+}
 
 @media (max-width: 600px) {
+
+  .wrapper {
+    width: 100%;
+  }
+
   form.new_designer {
     width: 100%;
   }
+
   .form-container textarea#designer_comment{
-    width: 200px;
+    width: 80%;
   }
+
   .form-container {
     width: 100%;
+  }
+  .form-container .website input {
+    float: none;
+  }
+  .form-container .input, .form-container .website {
+    margin: 0;
+  }
+  .submit input {
+    float: left;
+  }
+  .description {
+    width: auto;
+    margin-right: 0;
   }
 }

@@ -21,11 +21,11 @@
 
 en:
   hello: "Hello world"
-  first: "Firstname"
-  last: "Lastname"
-  email: "Email"
+  first: "First"
+  last: "Last"
+  email: "@"
   city: "City"
   country: "Country"
   phone_number: "Phone number"
   website_url: "http://..."
-  comment: "Comment"
+  comment: "We're curious. Tell us a little bit about yourself and your designs (max. 500 Characters)"
