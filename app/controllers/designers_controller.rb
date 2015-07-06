@@ -7,6 +7,7 @@ class DesignersController < ApplicationController
   def create
     @designer = Designer.new(create_params)
     if @designer.save
+      DesignerMailer.welcome(@designer.id).deliver
       redirect_to created_designers_path
     else
       redirect_to not_created_designers_path
